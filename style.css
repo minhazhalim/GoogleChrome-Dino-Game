@@ -1,0 +1,51 @@
+*,*::before,*::after {
+     box-sizing: border-box;
+     user-select: none;
+}
+body {
+     margin: 0px;
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.world {
+     overflow: hidden;
+     position: relative;
+}
+.score {
+     position: absolute;
+     top: 1vmin;
+     right: 1vmin;
+     font-size: 3vmin;
+}
+.start-screen {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     font-size: 5vmin;
+}
+.hide {
+     display: none;
+}
+.ground {
+     --left: 0;
+     position: absolute;
+     left: calc(var(--left) * 1%);
+     bottom: 0%;
+     width: 300%;
+}
+.dino {
+     --bottom: 0;
+     position: absolute;
+     left: 1%;
+     bottom: calc(var(--bottom) * 1%);
+     height: 30%;
+}
+.cactus {
+     position: absolute;
+     left: calc(var(--left) * 1%);
+     bottom: 0%;
+     height: 30%;
+}
